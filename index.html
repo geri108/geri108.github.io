@@ -1,0 +1,64 @@
+<!DOCTYPE html>  <!-- a html dokumentumra utal-->
+<html lang="en"> <!-- html elem, a paramétereket tartalmazza-->
+<head>
+    <meta charset="UTF-8"> <!--karakter készletet állít be, az UTF-8 minden nyelvhez jó-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--a megjelenítés szélességét mutatja-->
+    <title>Szuper oldal</title>
+</head>
+<body>
+<h1>Karmapa Csenno</h1>  <!--H1-H6-ig címek-->
+<br><br>
+<h2>Menü a további oldalakhoz</h2>
+    <ul>
+        <li><a target="_blank" href="tablazat.html"><h3>Táblázat</h3></a></li>
+    </ul>
+    
+<br>
+<h2>Link és szöveg formázás</h2>
+    <a href="http://www.buddhizmusma.hu">Kifelé mutató link</a> <!--link-->
+    <p><a href="index.html#ide">Ugorjon az Ide ugorjon részhez, az "id" használatával.</a></p>
+    <!--ha lent csinálunk egy hivatkozást, akkor xxxx.html#xxxid használatával oda fog ugorni-->
+    <br><h4>Formázások</h4>
+    <p>Formázások: em vagy i és strong vagy b használatával</p> <!--P, mint paragraph-->
+    <p></p>
+    <p>Ez egy <em>nagyon fontos</em> dőlt szöveg</p> <!--dőlt-->
+    <p>Ez egy <i>nagyon fontos</i> dőlt szöveg</p>
+    <p>Ez egy <strong>nagyon fontos</strong> félkövér szöveg</p> <!--félkövér-->
+    <p>Ez egy <b>nagyon fontos</b> félkövér szöveg</p>
+<br><br>
+<h2> Felsorolások</h2>
+       Rendezetlen lista
+    <ul><!--unordered list - ez magában még semmi, csak egy konténer, kell az LI -->
+        <li>Lista elem 1</li> <!--list item - listaelem -->
+        <li>Lista elem 2</li>
+        <li>Lista elem 3</li>
+        <ul>                <!--allistát egy új "ul" elemmel lehet létrehozni  -->
+            <li>Allista elem 1</li>
+            <li>Allista elem 2</li>
+            <li>Allista elem 3</li>
+        </ul>
+    </ul>
+    <br>
+    Rendezett lista
+    <ol><!--ordered list - ez magában még semmi, csak egy konténer, kell az LI -->
+        <li>Lista elem 1</li> <!--list item - listaelem -->
+        <li>Lista elem 2</li>
+        <li>Lista elem 3</li>
+    </ol>
+
+<br>
+<h2>Kép beillesztések és linkek</h2>
+    <img src="img/image.jpg" alt="Buddha"> <!-- kép megejelnítés -->
+<br><br>
+    <a href="http://www.buddhizmusma.hu">
+        BuddhizmusMa.hu</a>  <!-- link megejelnítés -->
+<br><br>
+    <a href="http://www.buddhizmusma.hu">
+    <img width="40px" src="img/image.jpg" alt="Buddha"> Kép linkelve...</a>  <!-- kép és link megejelnítés -->
+<br><br>
+    <a target="_blank" href="http://www.buddhizmusma.hu"> A Buma link új lapon nyíljon meg <!-- target->üres lapon nyíljon meg -->
+<br>
+<br>
+    <h2 id="ide">Ide ugorjon</h2> <!--ha az url végére odaírjuk, hogy ...index.html#ide,akkor ehhez a sorhoz fog ugorni-->
+</body>
+</html>

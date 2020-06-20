@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táblázat készítés</title>
+</head>
+<body>
+    <h1>Táblázat</h1>
+    <br>
+    <table>
+        <caption>Táblázat cím</caption> <!-- A teljes táblázat címe-->
+        <thead>     <!-- A táblázat fejlécének külön szakaszt kell nyitni (táblázat fej)-->
+            <tr>    <!-- táblázat fejléc sor-->
+                <th>Oszlop1</th>    <!-- táblázat fejléc 1. oszlop-->
+                <th>Oszlop2</th>
+                <th>Oszlop3</th>
+            </tr>
+        </thead>
+        <tr>        <!-- Table row-->
+            <td>1 sor 1 cella</td>  <!-- Táblázat cella-->
+            <td>1 sor 2 cella</td>
+            <td rowspan="2">3. cella</td> <!-- összeolvasztás a következő sor oszlopcellájával-->
+        </tr>
+        <tr>
+            <td>2 sor 1 cella</td>
+            <td>2 sor 2 cella</td>
+            
+        </tr>
+        <tr> 
+            <td>3 sor 1 cella</td>  
+            <td>3 sor 2 cella</td>
+            <td>3 sor 3 cella</td>
+        </tr>
+        <tr> 
+            <td colspan="3">3 sor 1-2-3. cella</td>  
+        </tr>
+        <tfoot> <!-- Táblázat lábléc-->
+            <tr> <!-- Táblázat lábléc sor-->
+                <td colspan="3">&copy; 2020</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
